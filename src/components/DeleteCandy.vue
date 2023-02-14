@@ -29,7 +29,7 @@ import axios from 'axios'
                         candyId: this.candyId,
                     }
                 }).then(()=>{
-                    // Will print for the user if the candy is added successfully
+                    // Will print for the user if the candy is deleted successfully!
                     this.result = "Candy post deleted!"
                 }).catch(()=>{
                     this.result = "Something went wrong!"

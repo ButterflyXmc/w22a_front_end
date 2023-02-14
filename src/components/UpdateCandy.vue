@@ -32,7 +32,7 @@ import axios from 'axios'
                         candyDescription: this.candyDescription
                     }
                 }).then(()=>{
-                    // Will print for the user if the candy is added successfully
+                    // Will print for the user if the candy is updated successfully
                     this.result = "Candy post updated!"
                 }).catch(()=>{
                     this.result = "Something went wrong!"

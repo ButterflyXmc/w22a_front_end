@@ -1,12 +1,13 @@
 <template>
     <div>
-        <h1>Home</h1>
-        <div v-for="candy in candies" :key="candy.name">
-            <p>Id : {{candy.Id}}</p>
-            <p>Name : {{candy.Name}}</p>
-            <p>Description: {{candy.Description}}</p>
-        </div>
+        <h1>HOME</h1>
 
+        <div v-for="candy in candies" :key="candy.name">
+            <!-- Make sure teh first letter is capitlized as You have in the backend  -->
+            <h4> Candy Id : {{candy.Id}}</h4>
+            <h2>Name : {{candy.Name}}</h2>
+            <h3>Description : {{candy.Description}}</h3>
+        </div>
     </div>
 </template>
 

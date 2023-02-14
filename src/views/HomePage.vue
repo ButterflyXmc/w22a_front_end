@@ -1,11 +1,16 @@
 <template>
     <div>
-        <h1>HOME</h1>
-
+        <h1>Yum Yum yum Candies</h1>
+        <nav>
+            <v-btn><router-link to="/post">Add new Cnadies</router-link></v-btn>
+            <v-btn><router-link to="/update">Edit posts</router-link> </v-btn> 
+            <v-btn><router-link to="/delete">Delete Candy post</router-link> </v-btn>
+        </nav>
+        
         <div v-for="candy in candies" :key="candy.name">
             <!-- Make sure teh first letter is capitlized as You have in the backend  -->
-            <h4> Candy Id : {{candy.Id}}</h4>
             <h2>Name : {{candy.Name}}</h2>
+            <h4> Candy Id : {{candy.Id}}</h4>
             <h3>Description : {{candy.Description}}</h3>
         </div>
     </div>

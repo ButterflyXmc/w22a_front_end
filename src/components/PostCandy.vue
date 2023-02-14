@@ -1,14 +1,14 @@
 <template>
     <div>
-    <h1>ADD Candy</h1>
-        <div>
-            <v-text-field v-model="candyName" label = "Candy Name"></v-text-field>
-            <v-text-field v-model="candyDescription" label = "Candy Description"></v-text-field>
-            <v-btn @click="add_candy">Add Post</v-btn>
-                <div v-if="result">
-                    <h2>{{result}}</h2>
-                </div>
-        </div>
+        <h1>ADD Candy</h1>
+            <div>
+                <v-text-field v-model="candyName" label = "Candy Name"></v-text-field>
+                <v-text-field v-model="candyDescription" label = "Candy Description"></v-text-field>
+                <v-btn @click="add_candy">Add Post</v-btn>
+                    <div v-if="result">
+                        <h2>{{result}}</h2>
+                    </div>
+            </div>
     </div>
 </template>
 

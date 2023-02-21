@@ -2,7 +2,8 @@
     <div>
         <h1>Delete candy</h1>
             <div>
-                <v-text-field v-model="candyId" label = "Enter Candy Id"></v-text-field>                <v-btn @click="add_candy">Update Post</v-btn>
+                <v-text-field v-model="candyId" label = "Enter Candy Id"></v-text-field>                
+                <v-btn @click="delete_candy">delete Post</v-btn>
                     <div v-if="result">
                         <h2>{{result}}</h2>
                     </div>
@@ -21,7 +22,7 @@ import axios from 'axios'
             }
         },
         methods: {
-            add_candy(){
+            delete_candy(){
                 axios.request({
                     url: "http://127.0.0.1:5000/api/candy",
                     method: "DELETE",
